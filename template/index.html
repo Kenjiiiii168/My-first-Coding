@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>First Coding</title>
+
+  <!-- ลิงก์ไฟล์ CSS -->
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <link rel="stylesheet" href="../static/css/style2.css" />
+
+  <!-- ใส่ลิงก์ฟอนต์ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../static/css/style3.css" />
+</head>
+
+<body>
+
+  <!-- ส่วนของเคน (ใช้ style.css) -->
+  <div id="ken" class="ken-container">
+    <h1>สวัสดีครับ ผมชื่อเค็น</h1>
+    <p>ผมเป็นคนที่สนใจเทคโนโลยี ชอบทำอาหาร และชอบเรียนรู้สิ่งใหม่ๆ<br>
+       ตอนนี้กำลังฝึกเขียนเว็บ และทำโปรเจกต์เล็กๆของตัวเองอยู่ครับ</p>
+    <div class="ken-social">
+      <a href="https://facebook.com/Kentrollinglol" target="_blank">Facebook</a> |
+      <a href="https://github.com/Kenjiiiii168" target="_blank">GitHub</a>
+    </div>
+    <button class="ken-btn" onclick="sayHello('เค็น')">คลิกเพื่อทักทาย</button>
+  </div>
+
+  <!-- ส่วนของซีอิ๊ว (ใช้ style2.css) -->
+  <div id="seeew" class="seeew-container">
+    <!-- ก่อนข้อความใน seeew-container -->
+    <h1>สวัสดีครับ ผมชื่อซีอิ๊ว</h1>
+    <p>ผมเป็นเกมเมอร์สายอินดี้ ชอบเล่นเกมเนื้อเรื่องลึกๆ และชอบแบ่งปันความรู้เกี่ยวกับเกมให้คนอื่น<br>
+       ตอนนี้กำลังไลฟ์เกมบน Twitch และกำลังเริ่มทำช่อง YouTube ของตัวเอง</p>
+    <div class="seeew-social">
+      <a href="https://twitch.tv/yourchannel" target="_blank">Twitch</a> |
+      <a href="https://www.youtube.com/@zeaeiwpsk" target="_blank">YouTube</a> |
+      <a href="https://discord.gg/xUZUdfZJ" target="_blank">Discord</a>
+    </div>
+    <button class="seeew-btn" onclick="sayHello('ซีอิ๊ว')">คลิกเพื่อทักทาย</button>
+  </div>
+<!-- Jumpscare overlay -->
+<div id="jumpscare" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:black; z-index:9999;">
+  <button onclick="closeJumpscare()" style="position:absolute; top:10px; right:10px; padding:10px; background:red; color:white; border:none; cursor:pointer; font-family:'Press Start 2P'; z-index:10000;">X ปิด</button>
+  <video id="jumpscareVideo" width="100%" height="100%" autoplay>
+    <source src="jumpscare.mp4" type="video/mp4">
+  </video>
+</div>
+  <script src="../static/js/script.js"></script>
+<div style="text-align:center; margin-top:40px;">
+  <a href="index2.html" class="pixel-btn">Next Page</a>
+</div>
+</body>
+</html>

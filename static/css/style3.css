@@ -1,0 +1,69 @@
+body {
+  font-family: 'Press Start 2P', cursive, monospace;
+  background-color: #121212;
+  color: #eee;
+  padding: 20px;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 40px;
+  color: #22aeff; /* สีแดง YouTube */
+}
+.youtube-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.yt-item {
+  position: relative;
+  width: 320px;
+  height: 180px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: #000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  transition: box-shadow 0.3s ease;
+}
+.yt-item:hover {
+  box-shadow: 0 4px 20px rgba(255,0,0,0.8);
+}
+.yt-thumb, .yt-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0; left: 0;
+  transition: opacity 0.3s ease;
+}
+.yt-video {
+  opacity: 0;
+  pointer-events: none;
+}
+.yt-item:hover .yt-thumb {
+  opacity: 0;
+}
+.yt-item:hover .yt-video {
+  opacity: 1;
+  pointer-events: auto;
+}
+.yt-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 6px 8px;
+  font-size: 14px;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-sizing: border-box;
+}
+iframe {
+  border: none;
+}
